@@ -17,6 +17,9 @@
   </head>
 
   <body >
+    <video id = "v1" class = "background-video"  autoplay muted loop style="width:100%;">
+    <source  src="video/509390235.mp4">
+    </video>
     <ul class="layui-nav" lay-filter="">
    <li class="layui-nav-item layui-this"><a href="">首页</a></li>
    <li class="layui-nav-item "><a href="">我的</a></li>
@@ -38,8 +41,10 @@
 layui.use('element', function(){
   var element = layui.element;
   //…
-
 });
+
+var video= document.getElementById('v1');
+ video.playbackRate = 0.5;
 </script>
 
 </div>
